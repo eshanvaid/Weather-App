@@ -41,6 +41,6 @@ app.post("/", function(req, res) {
 
 
 
-app.listen(1808, function() {
+app.listen(process.env.PORT || 1808, function() {
     console.log("Server is running on port 1808");
 });

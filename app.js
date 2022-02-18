@@ -30,7 +30,7 @@ app.post("/", function(req, res) {
             const weatherData = JSON.parse(data);
             var imageURL = 'http://openweathermap.org/img/wn/' + weatherData.weather[0].icon + '@2x.png';
             imageWeather = '<img class="icon" src="images/4571485.png" alt="">';
-            res.render(__dirname + "/result.html", { description: weatherData.weather[0].description, city: weatherData.name, temperature: weatherData.main.temp, feelslike: weatherData.main.feels_like, image: imageWeather });
+            res.render(__dirname + "/result.html", { description: weatherData.weather[0].description, city: weatherData.name, temperature: weatherData.main.temp, feelslike: weatherData.main.feels_like, image: imageURL });
             // res.write("<h1>It is " + weatherData.weather[0].description + " in " + cityName + "</h1>");
             // res.write("<h2>The temperature is " + weatherData.main.temp + " and feels like " + weatherData.main.feels_like + "</h2>");
             // res.write("<img src = 'http://openweathermap.org/img/wn/" + weatherData.weather[0].icon + "@2x.png'></img>");

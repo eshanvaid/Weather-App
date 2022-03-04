@@ -17,4 +17,4 @@ To get the Node server running locally:
 
 - [expressjs](https://github.com/expressjs/express) 
 - [body-parser](https://github.com/expressjs/body-parser)
-- [EJS](https://github.com/mde/ejs)
+- [EJS](https://github.com/mde/ejs) 
